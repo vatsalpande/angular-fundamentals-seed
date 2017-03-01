@@ -34,7 +34,9 @@ input,
 button {
   outline: 0;
 }
-input {
+input[type=text],
+input[type=email],
+input[type=number] {
   border: none;
   background: #fff;
   font-size: 13px;
@@ -51,6 +53,10 @@ button {
   padding: 5px 10px;
   text-align: center;
   color: #fff;
+}
+button:disabled {
+  cursor: not-allowed;
+  background: #b598e4;
 }
 p {
   margin: 5px 0;
